@@ -1,0 +1,17 @@
+img{
+   width: 300px;
+   border:5px black solid;
+}
+body{
+   background-image: url(./La\ tierra\ Espacio.jpg);
+   background-size: cover;
+   background-attachment: fixed ;
+}
+h2{
+   color:rgb(235, 220, 220)
+   
+}
+h1{
+   color:rgb(241, 238, 233);
+   
+}
