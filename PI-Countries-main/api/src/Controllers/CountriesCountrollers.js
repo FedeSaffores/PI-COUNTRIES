@@ -17,7 +17,7 @@ async function getAllCountries(req, res, next) {
             nombre: pais.name.common,
             img: pais.flags[0],
             continente: pais.continents[0],
-            capital: pais.capital ? pais.capital : "No tiene capital",
+            capital: pais.capital ? pais.capital[0] : "No tiene capital",
             subregion: pais.subregion ? pais.subregion : "No tiene subregion",
             area: pais.area,
             poblacion: pais.population,
@@ -27,7 +27,7 @@ async function getAllCountries(req, res, next) {
     }
     if (req.query.pais) {
       let pais = await Country.findAll({
-        where: { name: { [sequelize.Op.iLike]: "%" + req.query.pais + "%" } },
+        where: { nombre: { [sequelize.Op.iLike]: "%" + req.query.pais + "%" } },
       });
 
       if (pais.length === 0) {
@@ -47,7 +47,7 @@ async function getAllCountries(req, res, next) {
 async function getCountryById(req, res, next) {
   try {
     let pais = await Country.findOne({
-      where: { ID: req.params.id },
+      where: { ID: req.params.idPais },
       include: Actividades,
     });
     res.json(pais);
