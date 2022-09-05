@@ -12,26 +12,38 @@ function Pais() {
   if (!country) return null;
   return (
     <div>
-      <button>
-        <div>
-          <Link to="/countries">Volver a Home</Link>
-        </div>
-      </button>
-      <h3>PAIS : {country.nombre}</h3>
+      <Link className="LinkCountry" to="/countries">
+        Volver a Home
+      </Link>
+
+      <h3 className="pais">{country.nombre}</h3>
       <img src={country.img} alt={country.nombre} />
-      <h3>ID : {country.ID}</h3>
-      <h3>CAPITAL : {country.capital}</h3>
-      <h3>AREA : {country.area}</h3>
-      <h3>SUBREGION : {country.subregion}</h3>
-      <h3>POBLACION :{country.poblacion}</h3>
-      <h3>Actividades</h3>
-      <table>
-        <thead>
-          <th>Actividad</th>
+      <div className="country">
+        <h3>ID = {country.ID}</h3>
+        <h3>CAPITAL={country.capital}</h3>
+        <h3>AREA = {country.area}</h3>
+        <h3>SUBREGION = {country.subregion}</h3>
+        <h3>POBLACION ={country.poblacion}</h3>
+      </div>
+      <h3></h3>
+      <h3 className="actividades">Actividades</h3>
+      <table className="tabla">
+        <thead className="elementosTabla">
+          <th>Actividad </th>
           <th>Duracion</th>
           <th>Temporada</th>
-          <th>Dificultad</th>
+          <th>Dificulad</th>
         </thead>
+        <tbody>
+          {country.Actividades.map((e) => (
+            <tr className="Actividad" key={e.nombre}>
+              <td>{e.nombre}</td>
+              <td>{e.duracion}</td>
+              <td>{e.temporada}</td>
+              <td>{e.dificultad}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

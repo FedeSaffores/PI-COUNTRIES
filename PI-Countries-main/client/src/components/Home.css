@@ -1,6 +1,41 @@
+h1{
+   display: block;
+   margin-left:auto;
+    margin-right: auto;
+   text-transform: uppercase;
+   text-decoration:none;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(93, 118, 139);
+   font-weight: 1000;
+   width: 1000px;
+   font-weight: 500px;
+   font-size: 40px;
+   -webkit-text-stroke: 2px grey;
+}
+.btn{
+   background-color: rgb(165, 162, 162);
+   border-radius: 2px black;
+   position: absolute;
+   top: 2px;
+   float:left;
+   left:1%;
+   cursor: pointer;
+   border-radius: 25px;
+}
+.btn1{
+   background-color: rgb(165, 162, 162);
+   border-radius: 2px black;
+   position: absolute;
+   top: 2px;
+   float:right;
+   right:1%;
+   cursor: pointer;
+   border-radius: 25px;
+}
 img{
    width: 300px;
    border:5px black solid;
+   
 }
 body{
    background-image: url(./La\ tierra\ Espacio.jpg);
@@ -14,4 +49,146 @@ h2{
 h1{
    color:rgb(241, 238, 233);
    
+}
+.Search{
+   background-color:rgb(164, 159, 159);
+   border:2px solid black;
+        border-radius: 50px;
+        padding: 25px 25px;
+        cursor: pointer;
+        padding: 5px 15px;
+
+}
+.reset{
+   background-color:rgb(164, 159, 159);
+   border:2px solid black;
+        border-radius: 50px;
+        padding: 25px 25px;
+        cursor: pointer;
+        padding: 5px 15px;
+
+
+}
+.ordAlf{
+   background-color:rgb(164, 159, 159);
+   border:2px solid white;
+   border-radius: 50px;
+   float: right;
+   margin-top: 40px;
+   position: absolute;
+   top:90px;
+   float:right;
+   right:1px;
+   display: block;
+   padding: 5px 40px;
+   color:white;
+   background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+   cursor: pointer;
+   border-color: white;
+
+}
+.ordAlf1{
+   background-color:rgb(164, 159, 159);
+   border:2px solid white;
+   background-color: white;
+    border:2px solid black;
+    border-radius: 50px;
+    float: right;
+    margin-top: 40px;
+    position: absolute;
+    top:90px;
+    right:right;
+    right:145px;
+    display: block;
+    padding: 5px 22px;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+    cursor: pointer;
+    border-color: white;
+
+}
+
+.ordPob{
+   background-color:rgb(164, 159, 159);
+   border:2px solid black;
+    border-radius: 50px;
+    float: right;
+    margin-top: 80px;
+    position: absolute;
+    top:100px;
+    float:right;
+    right:1px;
+    display: block;
+    padding: 5px 40px;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+    cursor: pointer;
+    border-color: white;
+
+}
+.ordPob1{
+   background-color: white;
+    border:2px solid black;
+    border-radius: 50px;
+    float: left;
+    margin-top: 125px;
+    position: absolute;
+    top:100px;
+    right:2px;
+    display: block;
+    padding: 5px 40px;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+    cursor: pointer;
+    border-color: white;
+}
+.CantPobl{
+   background-color:rgb(164, 159, 159);
+   border:2px solid black;
+        border-radius: 50px;
+        padding: 25px 25px;
+        cursor: pointer;
+        padding: 5px 15px;
+}
+.ORDCONT{
+   background-color:rgb(164, 159, 159);
+   border:2px solid black;
+        border-radius: 50px;
+        padding: 25px 25px;
+        cursor: pointer;
+        padding: 5px 15px;
+
+}
+.COUNTRIES{
+   display: block;
+   margin-left:auto;
+    margin-right: auto;
+   text-transform: uppercase;
+   text-decoration:none;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(33, 31, 31);
+   font-weight: 700;
+   width: 500px;
+   font-weight: 300px;
+   font-size: 40px;
+   -webkit-text-stroke: 2px grey;
+}
+.Agregar{
+   background-color:rgb(164, 159, 159);
+   text-decoration:none;
+   border:2px solid black;
+   border-radius: 50px;
+   float: left;
+   margin-top: 40px;
+   padding: 5px 40px;
+   color:white;
+   background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+   cursor: pointer;
+   border-color: white;
+}
+.CAJA{
+   display: block;
+   margin-left:auto;
+   margin-right: auto;
+   margin-top: 10%;
 }

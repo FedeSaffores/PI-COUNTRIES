@@ -1,0 +1,15 @@
+.btnIntro{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 700;
+    color:black;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.btnIntro:hover{
+   padding: 30px;
+   background-color: rgb(134, 97, 171) ;
+}

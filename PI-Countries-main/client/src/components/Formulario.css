@@ -1,0 +1,60 @@
+p{
+    color:white;
+    text-transform: uppercase;
+}
+.Nombre{
+    background-color: rgb(212, 206, 206);
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+}
+.Dificultad{
+    background-color: rgb(212, 206, 206);
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+}
+.Duracion{
+    background-color: rgb(212, 206, 206);
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+}
+.Temporada{
+    background-color: rgb(212, 206, 206);
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+}
+label{
+    color:white;
+    text-transform: uppercase;
+
+}
+.Country{
+    background-color: rgb(212, 206, 206);
+    width:290px;
+}
+.Select{
+    background-color: rgb(212, 206, 206);
+
+}
+.c, .b{
+    margin-top: 20px;
+    background-color: rgb(212, 206, 206);
+    width: 100px;
+    height: 50px;
+    border-radius: 25%
+
+}
+.HOME{
+    text-decoration: none;
+    color:white;
+    float: left;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px 30px 30px 30px;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+
+
+}

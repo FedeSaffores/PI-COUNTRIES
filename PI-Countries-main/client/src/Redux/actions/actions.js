@@ -8,6 +8,7 @@ import {
   ORD_ALF_REV,
   ORD_POB,
   ORD_POB_REV,
+  SHOW_ACTIVIVIDAD,
 } from "./actionsName";
 
 export function getCountries() {
@@ -29,6 +30,7 @@ export function getName(nombre) {
       const res = await axios.get(
         `http://localhost:3001/countries?pais=${nombre}`
       );
+      //dispatch: Es una función que permite lanzar acciones (actions) al store, con la intención de afectar el estado.
       dispatch({ type: GET_NAME, payload: res.data });
     } catch (err) {
       throw err;
@@ -57,5 +59,22 @@ export function ordPoblacion() {
 export function ordPobRev() {
   return {
     type: ORD_POB_REV,
+  };
+}
+export function showAct() {
+  return {
+    type: SHOW_ACTIVIVIDAD,
+  };
+}
+export function createActividad(actividad) {
+  return async function () {
+    try {
+      const newAct = await axios.post(
+        "http://localhost:3001/actividades",
+        actividad
+      );
+    } catch (err) {
+      throw err;
+    }
   };
 }

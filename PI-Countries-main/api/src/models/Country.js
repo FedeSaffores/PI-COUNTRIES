@@ -31,7 +31,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
     },
     poblacion: {
-      type: DataTypes.STRING,
+      type: DataTypes.FLOAT,
     },
   });
 };

@@ -1,4 +1,70 @@
+.imag{
+    width: 250px;
+    border-radius: 100px;
+}
+.elementosTabla{
+    color:white
+}
+
+
+
+.tabla{
+    margin:0 auto;
+    
+}
+td, th{
+    padding: 10px;
+    border:solid grey 3px;    
+}
+
+.Actividad{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:white;
+    
+    
+}
 h3{
     color: rgb(224, 210, 210);
 
 }
+.country{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius:50px 50px 50px 50px;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #484e59);
+    font-size: 20px;    
+    font-weight: 300px;
+    -webkit-text-stroke: 2px black;  
+}
+
+
+.LinkCountry{
+    display:block;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    margin:20px 15px;
+    padding:10px 15px;
+    text-decoration:none;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #d4e5e7, #2d3340);
+}
+
+.pais{
+    font-family:"Times New Roman";
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+
+
+

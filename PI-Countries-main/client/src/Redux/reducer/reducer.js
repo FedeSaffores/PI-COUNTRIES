@@ -54,6 +54,14 @@ function reducer(state = inicialState, { type, payload }) {
         countries: state.countries.slice().sort(ordPobl).reverse(),
       };
     }
+    case "SHOW ACTIVIDAD": {
+      return {
+        ...state,
+        countries: state.countries.filter((c) => {
+          return c.actividades.some((a) => a.nombre === payload);
+        }),
+      };
+    }
     default:
       return state;
   }

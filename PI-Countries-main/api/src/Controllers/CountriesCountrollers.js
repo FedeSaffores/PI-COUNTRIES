@@ -37,7 +37,7 @@ async function getAllCountries(req, res, next) {
       }
       res.json(pais);
     } else {
-      paises = await Country.findAll();
+      paises = await Country.findAll({ include: Actividades });
       res.json(paises);
     }
   } catch (err) {

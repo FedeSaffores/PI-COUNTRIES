@@ -28,7 +28,7 @@ function Home() {
   const [page, setPage] = useState(0);
   const [busqueda, setBusqueda] = useState("");
   const [continent, setContinent] = useState("");
-
+  const [pobla, setPobla] = useState(0);
   const inputHandler = (e) => {
     setBusqueda(e.target.value);
   };
@@ -65,13 +65,13 @@ function Home() {
       <button className="ordAlf" onClick={() => dispatch(ordenAlf())}>
         ORD ALF
       </button>
-      <button className="ordAlf" onClick={() => dispatch(ordenAlfRev())}>
+      <button className="ordAlf1" onClick={() => dispatch(ordenAlfRev())}>
         ORDEN ALF REV
       </button>
       <button className="ordPob" onClick={() => dispatch(ordPoblacion())}>
         ORDEN POR MENOR POBLACION
       </button>
-      <button className="ordPob" onClick={() => dispatch(ordPobRev())}>
+      <button className="ordPob1" onClick={() => dispatch(ordPobRev())}>
         ORDEN POR MAYOR POBLACION
       </button>
       <button
@@ -82,7 +82,7 @@ function Home() {
         ANTERIOR
       </button>
       <button
-        className="btn"
+        className="btn1"
         onClick={() => setPage(page + 1)}
         disabled={country?.slice((page + 1) * 10).length === 0}
       >
@@ -104,17 +104,38 @@ function Home() {
         <option value={"Asia"}>Asia</option>
         <option value={"Oceania"}>Oceania</option>
       </select>
+      <select
+        onChange={(e) => {
+          setPobla(e.target.value);
+          setPage(0);
+        }}
+        value={pobla}
+        className="CantPobl"
+      >
+        <option value={0}>Parametros de poblacion</option>
+        <option value={50000000}>Mayor 50M</option>
+        <option value={100000000}>Mayor a 100M</option>
+        <option value={1000000000}>Mayor a 1.000M</option>
+      </select>
+
+      <div>
+        <Link className="Agregar" to="/actividades">
+          Agregar Actividades
+        </Link>{" "}
+      </div>
+
       {country
         ?.filter((e) => (continent !== "" ? e.continente === continent : true))
+        .filter((x) => (pobla !== false ? x.poblacion >= pobla : true))
         .slice(page * 10, (page + 1) * 10)
         .map((e) => {
           return (
-            <div key={e.ID}>
-              <h2>
-                <Link to={`/countries/${e.ID}`}>{e.nombre}</Link>
-              </h2>
-              <h2>{e.continente}</h2>
+            <div className="CAJA" key={e.ID}>
+              <Link to={`/countries/${e.ID}`} className="COUNTRIES">
+                {e.nombre}
+              </Link>
               <img src={e.img} alt={""} />
+              <h2>{e.continente}</h2>
             </div>
           );
         })}

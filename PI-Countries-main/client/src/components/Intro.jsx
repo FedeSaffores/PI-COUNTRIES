@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
-import react from "react";
+import "./Intro.css";
 
 const Intro = () => {
   return (
     <div>
-      <button className="Intro">
-        <Link to="/countries" className="btnIntro">
-          Intro
-        </Link>
-      </button>
+      <Link to="/countries" className="btnIntro">
+        Intro
+      </Link>
     </div>
   );
 };
